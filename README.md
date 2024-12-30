@@ -28,6 +28,51 @@ We designed all demos and notebooks to be **beginner friendly**! All you need to
 |------|-----------|----------------|-------|
 | **Xenobot Bully** | [Data Demo](https://github.com/Nim-Network-Foundation/X-box/tree/main/Bully-demo) | [▶️ Try for free](https://colab.research.google.com/drive/1l1bt_YAQj5fo2eRfx5QGgdR8F70W7JzM?usp=sharing) | Llama 3.1 Instruct(8B) |
 
+## 🚀 Getting Started
+
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/Nim-Network-Foundation/X-box
+   cd X-box
+   cd Bully-demo
+
+   ```
+
+2. **Configure Your Brand** 
+   Edit `run.js` with your details:
+   ```javascript
+   const { DatasetConfig, TweetDatasetProcessor } = require('./tweet_dataset_processor');
+
+   const config = new DatasetConfig({
+       // 🎨 YOUR BRAND IDENTITY HERE
+       tickerSymbol: '<YOUR_TICKER_SYMBOL>',           // Your token symbol
+       twitterHandle: '<YOUR_TWITTER_HANDLE>',  // Your Twitter handle (no @)
+       
+       // 📁 Data paths (usually leave as default)
+       inputMainTweetsPath: '../data/raw-data/bully/Bully_full.json',
+       inputPairsPath: '../data/raw-data/bully/bully_pairs_5000.json',
+       outputPath: 'datasets',
+       
+       // 🎯 Customize agent personality
+       systemPrompts: {
+           mainTweets: "You're Xenobot a funny AI agent that control a twitter account under the username {twitterHandle}, roast and make fun of people, make sure you're funny and unhinged.",
+           replies: "You're Xenobot a funny AI agent that control a twitter account under the username {twitterHandle}, roast and make fun of people tagging you on X/twitter, make sure you're funny and unhinged."
+       }
+   });
+
+   // 🚀 Run the processor
+   const processor = new TweetDatasetProcessor(config);
+   processor.process().catch(error => {
+       console.error('Error:', error);
+       process.exit(1);
+   });
+   ```
+
+3. **Run the Processor**
+   ```bash
+   node run.js
+   ```
+
 
 
 
