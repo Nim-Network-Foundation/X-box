@@ -46,8 +46,10 @@ Supervised Fine-Tuning (SFT) is a technique that teaches large language models t
 
 1. **Clone the repository**
    ```bash
-   git clone [repository-url]
-   cd [repository-name]
+   git clone https://github.com/Nim-Network-Foundation/X-box
+   cd X-box
+   cd Bully-demo
+
    ```
 
 2. **Configure Your Brand** 
