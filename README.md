@@ -10,7 +10,7 @@
 &nbsp;
 <a href="https://huggingface.co/Xeno-nim"><img src="https://img.shields.io/badge/🤗_Hugging_Face-Xeno--nim-ffca28?style=flat" alt="Hugging Face" /></a>
 &nbsp;
-<a href="https://xenobots.tech/blog/introducing-x-box"><img src="https://img.shields.io/badge/📝_Blog-Introducing_X--Box-20FF49?style=flat" alt="Blog Post" /></a>
+<a href="https://xenobots.tech"><img src="https://img.shields.io/badge/📝_Blog-Introducing_X--Box-20FF49?style=flat" alt="Blog Site" /></a>
 
 <br>
 </p>
