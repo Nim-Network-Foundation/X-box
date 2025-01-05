@@ -1,0 +1,19 @@
+{
+  "name": "x-box",
+  "version": "1.0.0",
+  "description": "Data Fine-Tuning Framework for AI Agents",
+  "main": "index.js",
+  "scripts": {
+    "prepare-data": "cd Bully-demo && node run.js",
+    "finetune": "cd Bully-demo && node openai-finetune.js"
+  },
+  "dependencies": {
+    "openai": "^4.28.0",
+    "dotenv": "^16.4.1",
+    "chalk": "^4.1.2",
+    "ora": "^5.4.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.16"
+  }
+} 
