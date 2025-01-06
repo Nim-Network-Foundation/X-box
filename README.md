@@ -73,8 +73,40 @@ We designed all demos and notebooks to be **beginner friendly**! All you need to
    node run.js
    ```
 
+## 🚀 OpenAI Fine-tuning
 
+This project now supports direct fine-tuning with OpenAI's API. To use this feature:
 
+1. **Set up your environment**
+   ```bash
+   cp .env.example .env
+   # Edit .env with your OpenAI API key and configuration
+   ```
+
+2. **Install dependencies**
+   ```bash
+   npm install
+   ```
+
+3. **Prepare your dataset**
+   ```bash
+   npm run prepare-data
+   ```
+
+4. **Start fine-tuning**
+   ```bash
+   npm run finetune
+   ```
+
+### Fine-tuning Configuration
+
+Adjust these parameters in your `.env` file:
+
+- `MODEL_NAME`: Base model to fine-tune (e.g., 'gpt-4')
+- `MAX_TOKENS`: Maximum tokens per response
+- `TEMPERATURE`: Response creativity (0.0-1.0)
+- `BATCH_SIZE`: Training batch size
+- `N_EPOCHS`: Number of training epochs
 
 ## 🚀 Core Features
 

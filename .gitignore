@@ -1,0 +1,11 @@
+# Environment variables
+.env
+
+# Node modules
+node_modules/
+
+# Generated datasets
+**/datasets/
+
+# macOS
+.DS_Store 
